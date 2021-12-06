@@ -1,0 +1,16 @@
+.dashboard-carousel-gallery {
+    padding: 0 5px;
+}
+
+.gallery-title {
+   position: absolute;
+   top: 190px;
+   color: #fff;
+}
+
+@media only screen and (max-width: 991px) {
+    .gallery-title {
+        position: absolute;
+        top: 125px;
+     }
+}

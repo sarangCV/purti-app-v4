@@ -1,0 +1,104 @@
+.container-sec {
+    height: 100vh;
+    width: 100%;
+    /* background:linear-gradient(rgb(161, 163, 165),transparent); */
+    background-color: #ededed;/*this your primary color*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* GLOBAL CONTAINER */
+.container-bg {
+    /* background: #CED4DA; */
+    margin: 0 30vw !important;
+    /* border: 1px solid #8585855c; */
+    border-radius: 5px;
+    /* border: 1px solid;
+    border-color: #e5af49 #c77905; */
+}
+
+.border-sec {
+    width: 100%;
+    /* border-top: 1px solid rgb(173 173 173);
+    border-bottom: 1px solid rgb(173 173 173); */
+    /* border: 2px solid; */
+    /* border-color: #e5af49 #c77905; */
+    box-shadow: rgb(0 0 0 / 15%) 2px 5px 60px 0px, rgb(0 0 0 / 0%) 10px 15px 10px 0px;
+    border-radius: 5px;
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    color: #000;
+}
+
+.border-sec-customer-entry {
+    /* margin: 0 28vh; */
+}
+
+.customer-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.customer-title h3 {
+    width: 50%;
+    text-align: left;
+    margin-bottom: 20px !important;
+    color: #000;
+}
+
+.customer-form-sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.customer-form-sec .customer-form {
+    width: 70%;
+}
+.customer-form-sec .customer-form label {
+    color: #000;
+}
+.customer-form-sec .customer-form .customer-form-dropdown {
+    margin-top: 10px;
+}
+
+
+@media only screen and (max-width: 991px) {
+    .customer-form-sec .customer-form {
+        width: 100%;
+    }
+    .customer-title h3 {
+        width: 100%;
+    }
+    .customer-title {
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .container-sec {
+        height: 100vh;
+    }
+    .border-sec {
+        margin: 70px 0px;
+        width: 100%;
+        /* border: 2px solid #767676; */
+        box-shadow: rgb(0 0 0 / 10%) 2px 2px 15px 8px;
+        padding: 20px;
+    }
+    .container-bg {
+       border: none;
+       padding: 0px 15px;
+       margin: 5px !important;
+    }
+    /* .border-sec-customer-entry {
+        
+    } */
+}
