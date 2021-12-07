@@ -15,8 +15,8 @@ const ProjectGallery = () => {
     const breakPoints = [
         { width: 1, itemsToShow: 1 },
         { width: 550, itemsToShow: 2, itemsToScroll: 2 },
-        { width: 768, itemsToShow: 4, itemsToScroll: 2 },
-        { width: 1200, itemsToShow: 3, itemsToScroll: 2}
+        { width: 768, itemsToShow: 2, itemsToScroll: 2 },
+        { width: 1200, itemsToShow: 2, itemsToScroll: 2}
       ];
 
     return (
@@ -24,19 +24,19 @@ const ProjectGallery = () => {
             <Navbar title="PROJECT GALLERY"/>
             <div className="container-sec">
                 <h1 className="gallery-title">Gallery</h1>
-                <div className="border-sec">
-                    {/* <div className="container"> */}
-                        <div className="dashboard-carousel dashboard-carousel-gallery">
-                            <Carousel breakPoints={breakPoints}>
-                                <GalleryCard image={gallery_one}/>
-                                <GalleryCard image={gallery_two}/>
-                                <GalleryCard image={gallery_three}/>
-                                <GalleryCard image={gallery_four}/>
-                                <GalleryCard image={gallery_five}/>
-                            </Carousel>
-                        </div>
-                        
-                    {/* </div> */}
+                <div className="container">
+                    <div className="border-sec">
+                            <div className="dashboard-carousel dashboard-carousel-gallery">
+                                <Carousel breakPoints={breakPoints}>
+                                    <GalleryCard image={gallery_one}/>
+                                    <GalleryCard image={gallery_two}/>
+                                    <GalleryCard image={gallery_three}/>
+                                    <GalleryCard image={gallery_four}/>
+                                    <GalleryCard image={gallery_five}/>
+                                </Carousel>
+                            </div>
+                            
+                    </div>
                 </div>
             </div>
         </>

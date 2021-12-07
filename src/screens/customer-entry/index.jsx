@@ -4,6 +4,7 @@ import { useHistory, Redirect } from 'react-router-dom';
 import Navbar from '../../components/navbar';
 
 import './style.css'
+import BackHandler from '../../components/back-handler';
 
 const CustomerEntry = () => {
 
@@ -23,6 +24,7 @@ const CustomerEntry = () => {
             <div className="container-sec">
                     <div className="container container-bg">
                         <div className="border-sec border-sec-customer-entry">
+                            <BackHandler/>
                             <div className="customer-title">
                                 <h3>Enter the details to continue</h3>
                             </div>

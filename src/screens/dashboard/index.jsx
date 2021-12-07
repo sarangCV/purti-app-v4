@@ -7,6 +7,7 @@ import { useHistory } from 'react-router-dom';
 
 import './style.css';
 import Navbar from '../../components/navbar';
+import BackHandler from '../../components/back-handler';
 
 const Dashboard = () => {
 
@@ -25,6 +26,7 @@ const Dashboard = () => {
             <div className="container-sec container-sec-dashboard">
                 <div className="container container-bg">
                     <div className="border-sec">
+                            <BackHandler/>
                             <div className="dashboard-card-sec">
                                     <DashboardCard title="Project 1" onClick={()=> history.push('/project-home')}/>
                                     {/* <DashboardCard number="2" onClick={()=> history.push('/project-home')}/>

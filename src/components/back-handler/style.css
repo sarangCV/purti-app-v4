@@ -1,0 +1,42 @@
+.back-handler-container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.back-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 40px;
+    width: 40px; */
+    /* padding: 5px 10px; */
+    /* border: 1px solid #000; */
+    /* border-radius: 10px; */
+    /* background-color: blue; */
+    transition: transform 100ms ease-in-out;
+}
+.action-back-btn {
+    width: 24px;
+    height: 24px;
+}
+.back-icon-container:hover {
+    /* box-shadow: rgb(0 0 0 / 20%) 0px 10px 36px 0px, rgb(0 0 0 / 6%) 0px 0px 0px 1px; */
+    cursor: pointer;
+    /* transition: .3s; */
+    /* transform: scale(1.2); */
+    /* transform: translateX(0px) translateY(75px); */
+}
+.back-icon-container span {
+    opacity: 0;
+    padding-left: 0;
+    transition: all 100ms ease-in-out;
+}
+
+.back-icon-container:hover span {
+    opacity: 1;
+    padding-left: 10px;
+    transform: scale(1.2);
+}
